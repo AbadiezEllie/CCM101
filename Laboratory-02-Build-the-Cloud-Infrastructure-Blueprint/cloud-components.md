@@ -2,7 +2,7 @@
 
 This document breaks down the four core categories of cloud infrastructure and connects each one to what I actually found while investigating the KillerCoda Ubuntu environment.
 
-## Compute Resources
+# Compute Resources
 
 ### Purpose
 Compute resources are the CPU and RAM that do the actual work, running programs, processing requests, executing code. Nothing happens without compute.
@@ -13,7 +13,7 @@ Compute is basically the product cloud providers are selling. Businesses don't w
 ### In the KillerCoda Environment
 Running `lscpu` showed a single virtual CPU (Intel Xeon E312xx, Sandy Bridge), and `free -h` showed 1.9Gi of RAM. That's not a lot of horsepower, but it's a real example of a compute resource, small-scale, but functionally the same thing an AWS EC2 instance or Azure VM provides on a much bigger level.
 
-## Storage Resources
+# Storage Resources
 
 ### Purpose
 Storage is where data actually lives, the OS files, logs, user data, all of it, persisting even after the machine restarts or shuts down.
@@ -24,7 +24,7 @@ Companies need somewhere reliable to keep their data, and they need that storage
 ### In the KillerCoda Environment
 Running `df -h` showed a 19G disk on `/dev/vda1`, split across mount points like `/`, `/boot`, and `/boot/efi`. Even in a small VM like this, you can see the same logic real cloud storage uses, dividing storage into partitions with specific jobs.
 
-## Networking Resources
+# Networking Resources
 
 ### Purpose
 Networking is what connects a machine to everything else, other servers, the internet, and end users trying to reach it.
@@ -35,7 +35,7 @@ Without networking, a cloud server is useless, it would just sit there completel
 ### In the KillerCoda Environment
 Running `hostname` and `ip a` showed this machine's hostname (ubuntu) and its network interfaces, including an IP address of 172.30.1.2 on the primary interface. That's the machine's identity on the network, the exact same concept behind how cloud providers assign IPs to every VM they spin up.
 
-## Operating System
+# Operating System
 
 ### Purpose
 The operating system manages the hardware underneath and gives every other piece of software a place to actually run.
