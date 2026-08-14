@@ -1,6 +1,3 @@
-# Cloud Infrastructure Components
-
-This document breaks down the four core categories of cloud infrastructure and connects each one to what I actually found while investigating the KillerCoda Ubuntu environment.
 
 # Compute Resources
 
