@@ -1,6 +1,4 @@
-# Cloud Provider Comparison
 
-This document compares the core infrastructure services offered by the three major public cloud providers: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP), based on their official documentation.
 
 ## Service Comparison Table
 
